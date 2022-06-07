@@ -10,12 +10,12 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
+      className="mb-16 max-w-[45rem] text-center leading-8 sm:mb-0 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
       id="about"
-    >   
+    >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
@@ -38,9 +38,9 @@ export default function About() {
         <span className="font-medium">
           advanced backend stack such as Docker, Monorepo, CI/CD and WebSockets
         </span>
-        . I am currently
-        looking for a <span className="font-medium">full-time position</span> as
-        a <span className="font-medium">Front-End software developer</span>.
+        . I am currently looking for a{" "}
+        <span className="font-medium">full-time position</span> as a{" "}
+        <span className="font-medium">Front-End software developer</span>.
       </p>
       {/* I also have knowledge of <span className="font-medium">Python</span>{" "}
         and <span className="font-medium">Machine Learning</span>. */}
@@ -52,9 +52,34 @@ export default function About() {
           learning new things such as swimming, content creation and more
         </span>
         . In the near future, I plan to launch my own{" "}
-        <span className="font-medium">YouTube channel</span> to share knowledge and insights.
+        <span className="font-medium">YouTube channel</span> to share knowledge
+        and insights.
       </p>
-      
+        
+      {/* <p className="mb-3">
+        During my study in the Department of Electrical and Computer Engineering
+        at Concordia University, these are the courses I enjoyed the most:
+        <ul>
+          <li className="mb-3">
+            <span className="font-medium">Software Engineering (COEN6311)</span>
+            : Designed a full-stack restaurant
+            website using Django, REST API, JWT, PostgreSQL.
+          </li>
+          <li className="mb-3">
+            <span className="font-medium">
+              Distributed Software System (COEN6731)
+            </span>
+            : Designed a microservices client-server-based architecture using
+            Java, SpringBoot Server, Oracle Cloud.
+          </li>
+          <li className="mb-3">
+            <span className="font-medium">Neural Networks (COEN6331)</span>:
+            Enjoyed this course and worked on a project titled Modulation
+            Classification using Convolutional Neural Network based on Deep
+            Learning.
+          </li>
+        </ul>
+      </p> */}
     </motion.section>
   );
 }
