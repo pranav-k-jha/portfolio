@@ -92,7 +92,7 @@ export default function Intro() {
         <a
           className="bg-slate-200 group px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer
           borderBlack"
-          href="https://github.com/pranav-k-jha/pranav-k-jha/files/15269765/Pranav_Jha_SE.pdf"
+          href="/"
           download
         >
           Download CV{" "}
