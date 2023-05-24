@@ -53,7 +53,7 @@ export default function Project({
             <a href={projectLink} target="_blank" rel="noreferrer">
               <motion.div
                 className="flex justify-center items-center bg-slate-100 borderBlack rounded-full p-2 hover:bg-gray-200"
-                whileInView={{ scale: [0, 1] }}
+                whileInView={{ scale: 1 }}
                 whileHover={{ scale: [1, 0.9] }}
                 transition={{ duration: 0.25 }}
               >
@@ -63,7 +63,7 @@ export default function Project({
             <a href={gitRepo} target="_blank" rel="noreferrer">
               <motion.div
                 className="flex justify-center items-center bg-slate-100 borderBlack rounded-full p-2 hover:bg-gray-200"
-                whileInView={{ scale: [0, 1] }}
+                whileInView={{ scale: 1}}
                 whileHover={{ scale: [1, 0.9] }}
                 transition={{ duration: 0.25 }}
               >
