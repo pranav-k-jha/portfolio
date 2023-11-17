@@ -3,7 +3,7 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import gymAppImg from "@/public/assets/gym_app.png";
 import restaurantImg from "@/public/assets/restaurant.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import countryApiImg from "@/public/assets/countries-api.png";
 
 export const links = [
   {
@@ -61,6 +61,15 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "REST Countries API",
+    description:
+      "This project is a response to Frontend Mentor's advanced challenge for the REST Countries API, featuring search and filter functionalities, as well as a Color Theme Switcher and Dark Mode.",
+    tags: ["JavaScript", "CSS", "HTML"],
+    imageUrl: countryApiImg,
+    gitRepo: "https://github.com/pranav-k-jha/countries-api",
+    projectLink: "https://countries-api-js.vercel.app/",
+  },
+  {
     title: "Gym Landing Page",
     description:
       "This is a modern landing page for a Fitness Application frontend built using React, TypeScript, Tailwind CSS, Hero Icons, Framer Motion, Form Submit, and React Anchor Link Smooth Scroll.",
@@ -68,6 +77,7 @@ export const projectsData = [
     imageUrl: gymAppImg,
     gitRepo: "https://github.com/pranav-k-jha/gym-ts-react-app",
     projectLink: "https://gym-ts-react-app.vercel.app/",
+    
   },
   {
     title: "Restaurant Landing Page",
@@ -78,15 +88,6 @@ export const projectsData = [
     gitRepo:
       "https://github.com/pranav-k-jha/geritch-restaurant-landing-page-react",
     projectLink: "https://geritch-restaurant-landing-page-react.vercel.app/",
-  },
-  {
-    title: "Word Analytics",
-    description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
-    gitRepo: "#",
-    projectLink: "#",
   },
 ] as const;
 

@@ -93,36 +93,3 @@ export default function Project({
     </motion.div>
   );
 }
-
-{
-  /* <motion.div
-whileHover={{ opacity: [0, 1] }}
-transition={{
-  duration: 0.25,
-  ease: "easeInOut",
-  staggerChildren: 0.5,
-}}
-className="hover:box-shadow:0 0 25px rgba(0, 0, 0, 0.2)"
->
-<a href="#" target="_blank" rel="noreferrer">
-  <motion.div
-    whileInView={{ scale: [0, 1] }}
-    whileHover={{ scale: [1, 0.9] }}
-    transition={{ duration: 0.25 }}
-    className="flex justify-center items-center text-lg z-[99]"
-  >
-    <AiFillEye />
-  </motion.div>
-</a>
-<a href="#" target="_blank" rel="noreferrer">
-  <motion.div
-    whileInView={{ scale: [0, 1] }}
-    whileHover={{ scale: [1, 0.9] }}
-    transition={{ duration: 0.25 }}
-    className="flex justify-center items-center"
-  >
-    <AiFillGithub />
-  </motion.div>
-</a>
-</motion.div> */
-}
