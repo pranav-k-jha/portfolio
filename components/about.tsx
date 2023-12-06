@@ -30,19 +30,32 @@ export default function About() {
         <span className="font-medium">
           React, Next.js, Node.js, and MongoDB
         </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        . I am also familiar with TypeScript and Prisma.
+      </p>
+      <p className="mb-3">
+        I am always looking to learn new technologies. I am currently learning
+        about{" "}
+        <span className="font-medium">
+          Docker, Monorepo, CI/CD and WebSockets
+        </span>
+        . I also have knowledge of <span className="font-medium">Python</span>{" "}
+        and <span className="font-medium">Machine Learning</span>.I am currently
+        looking for a <span className="font-medium">full-time position</span> as
+        a <span className="font-medium">Front-End software developer</span>.
       </p>
 
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and informative YouTube videos. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        video games, watching movies, and informative YouTube videos. I also
+        enjoy{" "}
+        <span className="font-medium">
+          learning new things such as swimming, content creation and more
+        </span>
+        .
+      </p>
+      <p>
+        I am planning to start my{" "}
+        <span className="font-medium">YouTube channel</span> to share knowledge.
       </p>
     </motion.section>
   );
