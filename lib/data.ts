@@ -74,7 +74,7 @@ export const projectsData = [
   {
     title: "REST Countries API",
     description:
-      "This project is a response to Frontend Mentor's advanced challenge for the REST Countries API, featuring search and filter functionalities, as well as a Color Theme Switcher and Dark Mode.",
+      "This project is a solution to Frontend Mentor's advanced challenge for the REST Countries API, featuring search and filter functionalities, as well as a Color Theme Switcher and Dark Mode.",
     tags: ["JavaScript", "CSS", "HTML"],
     projectTags: ["Frontend", "Fullstack", "All"],
     imageUrl: countryApiImg,
