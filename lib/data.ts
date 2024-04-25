@@ -45,7 +45,7 @@ export const experiencesData = [
     title: "Front-End Developer, Part-Time",
     location: "D3 Innovation Hub | Montreal, QC",
     description:
-      "I worked as a front-end developer for my university's startup hub D3 Innovation Hub.",
+      "I freelanced as a front-end developer for D3 Innovation Hub, a startup incubator affiliated with my university, during my study.",
     icon: React.createElement(CgWorkAlt),
     date: "2021 - 2023",
   },
