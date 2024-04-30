@@ -1,16 +1,32 @@
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("Home");
+    }
+  }, [inView, setActiveSection]);
   return (
-    <section id="home" className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section
+    ref={ref}
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div
@@ -24,10 +40,10 @@ export default function Intro() {
             <Image
               src="/profile.jpg"
               alt="Pranav portrait"
-              width={192}
-              height={192}
+              width={160}
+              height={160}
               priority={true}
-              className="rounded-full object-cover border-[0.35rem] border-white shadow-xl max-sm:h-[150px] max-sm:w-[150px]"
+              className="h-[160px] w-[160px] rounded-full object-cover border-[0.35rem] border-white shadow-xl max-sm:h-[150px] max-sm:w-[150px]"
             />
           </motion.div>
           <motion.span
@@ -47,7 +63,7 @@ export default function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-[25px]"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
@@ -59,7 +75,7 @@ export default function Intro() {
       </motion.h1>
 
       <motion.div
-        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
+        className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-sm font-medium"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -89,7 +105,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-slate-200 p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer
+          className="bg-slate-200 p-[1rem] text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer
           border border-black/10"
           href="https://linkedin.com"
           target="_blank"
@@ -98,7 +114,7 @@ export default function Intro() {
         </a>
 
         <a
-          className="bg-slate-200 p-[14px] text-gray-700 hover:text-gray-950  flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer
+          className="bg-slate-200 p-[0.85rem] text-gray-700 hover:text-gray-950  flex items-center gap-2 text-[1.15rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer
           border border-black/10"
           href="https://github.com"
           target="_blank"

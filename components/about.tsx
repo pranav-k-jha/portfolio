@@ -1,16 +1,24 @@
 "use client";
 
-import React from "react";
-
 import { motion } from "framer-motion";
 import SectionHeading from "./section-heading";
-
+import { useInView } from "react-intersection-observer";
+import { useActiveSectionContext } from "@/context/active-section-context";
+import { useEffect } from "react";
 
 export default function About() {
+  const { ref, inView } = useInView({ threshold: 0.75 });
+  const { setActiveSection } = useActiveSectionContext();
 
+  useEffect(() => {
+    if (inView) {
+      setActiveSection("About");
+    }
+  }, [inView, setActiveSection]);
 
   return (
     <motion.section
+      ref={ref}
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -20,8 +28,9 @@ export default function About() {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
-        <span className="font-medium">Electrical and Computer Engineering</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
+        <span className="font-medium">Electrical and Computer Engineering</span>
+        , I decided to pursue my passion for programming. I enrolled in a coding
+        bootcamp and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
         <span className="italic">My favorite part of programming</span> is the
         problem-solving aspect. I <span className="underline">love</span> the
