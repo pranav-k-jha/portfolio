@@ -13,6 +13,8 @@ export default function Project({
   description,
   tags,
   imageUrl,
+  gitRepo,
+  projectLink,
 }: ProjectProps) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
@@ -35,10 +37,10 @@ export default function Project({
         <div className="pt-4 pb-7 px-5 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full sm:group-even:ml-[18rem]">
           <h3 className="text-2xl font-semibold">{title}</h3>
           <p className="mt-2 leading-relaxed text-gray-700 ">{description}</p>
-          <ul className="flex flex-wrap gap-2 pt-2 sm:mt-auto">
+          <ul className="flex flex-wrap justify-center gap-2 pt-2 sm:mt-auto">
             {tags.map((tag, index) => (
               <motion.li
-              whileHover={{scale: 1.1}}
+                whileHover={{ scale: 1.1 }}
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
                 key={index}
               >
@@ -47,7 +49,7 @@ export default function Project({
             ))}
           </ul>
           <motion.div className="flex justify-center items-center -mb-4 py-2 gap-2">
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href={projectLink} target="_blank" rel="noreferrer">
               <motion.div
                 className="flex justify-center items-center bg-slate-100 borderBlack rounded-full p-2 hover:bg-gray-200"
                 whileInView={{ scale: [0, 1] }}
@@ -57,7 +59,7 @@ export default function Project({
                 <AiFillEye />
               </motion.div>
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href={gitRepo} target="_blank" rel="noreferrer">
               <motion.div
                 className="flex justify-center items-center bg-slate-100 borderBlack rounded-full p-2 hover:bg-gray-200"
                 whileInView={{ scale: [0, 1] }}

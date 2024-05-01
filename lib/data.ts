@@ -2,7 +2,7 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import gymAppImg from "@/public/assets/gym_app.png";
-import rmtdevImg from "@/public/rmtdev.png";
+import restaurantImg from "@/public/assets/restaurant.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
 export const links = [
@@ -61,18 +61,23 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Gym Landing Page",
     description:
-      "This is a modern landing page for a Fitness Application frontend built using React, TypeScript, Vite, Tailwind CSS, Hero Icons, Framer Motion, Form Submit, and React Anchor Link Smooth Scroll.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "This is a modern landing page for a Fitness Application frontend built using React, TypeScript, Tailwind CSS, Hero Icons, Framer Motion, Form Submit, and React Anchor Link Smooth Scroll.",
+    tags: ["React", "Tailwind CSS", "Framer Motion", "Form Submit"],
     imageUrl: gymAppImg,
+    gitRepo: "https://github.com/pranav-k-jha/gym-ts-react-app",
+    projectLink: "https://gym-ts-react-app.vercel.app/",
   },
   {
-    title: "rmtDev",
+    title: "Restaurant Landing Page",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "A modern restaurant landing page website with a user-friendly interface and experience, developed using React and SCSS for enhanced styling capabilities.",
+    tags: ["React", "CSS"],
+    imageUrl: restaurantImg,
+    gitRepo:
+      "https://github.com/pranav-k-jha/geritch-restaurant-landing-page-react",
+    projectLink: "https://geritch-restaurant-landing-page-react.vercel.app/",
   },
   {
     title: "Word Analytics",
@@ -80,6 +85,8 @@ export const projectsData = [
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
     tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
     imageUrl: wordanalyticsImg,
+    gitRepo: "#",
+    projectLink: "#",
   },
 ] as const;
 
