@@ -1,8 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
+import gymAppImg from "@/public/assets/gym_app.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
@@ -64,9 +63,9 @@ export const projectsData = [
   {
     title: "CorpComment",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "This is a modern landing page for a Fitness Application frontend built using React, TypeScript, Vite, Tailwind CSS, Hero Icons, Framer Motion, Form Submit, and React Anchor Link Smooth Scroll.",
     tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+    imageUrl: gymAppImg,
   },
   {
     title: "rmtDev",
