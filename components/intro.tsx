@@ -30,14 +30,14 @@ export default function Intro() {
             <Image
               src="/profile.jpg"
               alt="Pranav portrait"
-              width={160}
-              height={160}
+              width={150}
+              height={150}
               priority={true}
-              className="h-[160px] w-[160px] rounded-full object-cover border-[0.35rem] border-white shadow-xl max-sm:h-[150px] max-sm:w-[150px]"
+              className="h-[140px] w-[140px] mt-6 sm:mt-0 mb-6 rounded-full object-cover border-[0.35rem] border-white shadow-xl sm:h-[160px] sm:w-[160px]"
             />
           </motion.div>
           <motion.span
-            className="absolute bottom-0 right-0 text-5xl max-sm:text-3xl"
+            className="absolute mb-6 bottom-0 right-0 text-5xl max-sm:text-3xl"
             initial={{ opacity: 0, scale: 0 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{
