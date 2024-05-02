@@ -21,9 +21,10 @@ export default function Experience() {
           <React.Fragment key={index}>
             <VerticalTimelineElement
               contentStyle={{
-                background: "#f3ff4",
+                background: "rgb(0 0 10 / 2%)",
+
                 boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
+                border: "1px solid rgba(0, 1, 0, 0.05)",
                 textAlign: "left",
                 padding: "1.3rem 2rem",
               }}
