@@ -11,7 +11,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
-  const {setActiveSection, setTimeOfLastClick}=useActiveSectionContext()
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <section
@@ -60,9 +60,10 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
       >
         <span className="font-bold">Hello, I'm Pranav.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">2 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
+        <span className="font-bold">Front-End Developer</span> with{" "}
+        <span className="font-bold">over 2 years</span> of experience. I
+        specialize in developing <span className="italic">websites</span> using
+        the latest technologies in the industry. My primary focus is on{" "}
         <span className="underline">React (Next.js)</span>.
       </motion.h1>
 
@@ -77,10 +78,10 @@ export default function Intro() {
         <Link
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-            onClick={() => {
-              setActiveSection("Contact");
-              setTimeOfLastClick(Date.now());
-            }}
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
         >
           Contact me here{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
@@ -99,7 +100,7 @@ export default function Intro() {
         <a
           className="bg-slate-200 p-[1rem] text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer
           borderBlack"
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/pkrjha/"
           target="_blank"
         >
           <BsLinkedin />
@@ -108,7 +109,7 @@ export default function Intro() {
         <a
           className="bg-slate-200 p-[0.85rem] text-gray-700 hover:text-gray-950  flex items-center gap-2 text-[1.15rem] rounded-full focus:scale-[1.15] hover:scale-[1.15]  active:scale-105 transition cursor-pointer
           borderBlack"
-          href="https://github.com"
+          href="https://github.com/pranav-k-jha"
           target="_blank"
         >
           <FaGithubSquare />

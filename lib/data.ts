@@ -35,28 +35,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
     title: "Front-End Developer",
-    location: "Orlando, FL",
+    location: "Fujitsu | Montreal, QC",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+      "I'm now a frontend developer, currently working with Fujitsu. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities as my contract with Fujitsu Inc. will end in May 2023",
+    icon: React.createElement(FaReact),
+    date: "2023 - present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Front-End Developer, Part-Time",
+    location: "D3 Innovation Hub | Montreal, QC",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "I worked as a front-end developer for my university's startup hub D3 Innovation Hub.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021 - 2023",
+  },
+  {
+    title: "Wordpress Developer, Remote (Freelance)",
+    location: "MKJHA Consulting | Severn, MD",
+    description:
+      "I designed and developed the MKJHA Consulting website using WordPress CMS. I also managed and maintained the website’s content, ensuring it was organized and up-to-date.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2018-2020",
   },
 ] as const;
 
