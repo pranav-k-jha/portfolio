@@ -37,12 +37,13 @@ export default function Project({
           <p className="mt-2 leading-relaxed text-gray-700 ">{description}</p>
           <ul className="flex flex-wrap mt-4 gap-2 sm:mt-auto">
             {tags.map((tag, index) => (
-              <li
+              <motion.li
+              whileHover={{scale: 1.1}}
                 className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
                 key={index}
               >
                 {tag}
-              </li>
+              </motion.li>
             ))}
           </ul>
           <motion.div className="flex justify-center items-center -mb-4 py-2 gap-2">
