@@ -79,6 +79,15 @@ export const projectsData = [
       "https://github.com/pranav-k-jha/geritch-restaurant-landing-page-react",
     projectLink: "https://geritch-restaurant-landing-page-react.vercel.app/",
   },
+  {
+    title: "Word Analytics",
+    description:
+      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    imageUrl: wordanalyticsImg,
+    gitRepo: "#",
+    projectLink: "#",
+  },
 ] as const;
 
 export const skillsData = [
