@@ -65,6 +65,7 @@ export const projectsData = [
     description:
       "This project is a response to Frontend Mentor's advanced challenge for the REST Countries API, featuring search and filter functionalities, as well as a Color Theme Switcher and Dark Mode.",
     tags: ["JavaScript", "CSS", "HTML"],
+    projectTags: ["Frontend", "Fullstack", "All"],
     imageUrl: countryApiImg,
     gitRepo: "https://github.com/pranav-k-jha/countries-api",
     projectLink: "https://countries-api-js.vercel.app/",
@@ -74,16 +75,17 @@ export const projectsData = [
     description:
       "This is a modern landing page for a Fitness Application frontend built using React, TypeScript, Tailwind CSS, Hero Icons, Framer Motion, Form Submit, and React Anchor Link Smooth Scroll.",
     tags: ["React", "Tailwind CSS", "Framer Motion", "Form Submit"],
+    projectTags: ["Frontend", "Fullstack", "Backend", "All"],
     imageUrl: gymAppImg,
     gitRepo: "https://github.com/pranav-k-jha/gym-ts-react-app",
     projectLink: "https://gym-ts-react-app.vercel.app/",
-    
   },
   {
     title: "Restaurant Landing Page",
     description:
       "A modern restaurant landing page website with a user-friendly interface and experience, developed using React and SCSS for enhanced styling capabilities.",
     tags: ["React", "CSS"],
+    projectTags: ["Frontend", "E-Commerce", "All"],
     imageUrl: restaurantImg,
     gitRepo:
       "https://github.com/pranav-k-jha/geritch-restaurant-landing-page-react",

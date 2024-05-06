@@ -12,6 +12,7 @@ export default function Project({
   title,
   description,
   tags,
+  projectTags,
   imageUrl,
   gitRepo,
   projectLink,
