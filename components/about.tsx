@@ -38,12 +38,12 @@ export default function About() {
         <span className="font-medium">
           Docker, Monorepo, CI/CD and WebSockets
         </span>
-        . I also have knowledge of <span className="font-medium">Python</span>{" "}
-        and <span className="font-medium">Machine Learning</span>.I am currently
+        . I am currently
         looking for a <span className="font-medium">full-time position</span> as
         a <span className="font-medium">Front-End software developer</span>.
       </p>
-
+      {/* I also have knowledge of <span className="font-medium">Python</span>{" "}
+        and <span className="font-medium">Machine Learning</span>. */}
       <p>
         <span className="italic">When I'm not coding</span>, I enjoy playing
         video games, watching movies, and informative YouTube videos. I also
@@ -51,12 +51,10 @@ export default function About() {
         <span className="font-medium">
           learning new things such as swimming, content creation and more
         </span>
-        .
+        . In the near future, I plan to launch my own{" "}
+        <span className="font-medium">YouTube channel</span> to share knowledge and insights.
       </p>
-      <p>
-        I am planning to start my{" "}
-        <span className="font-medium">YouTube channel</span> to share knowledge.
-      </p>
+      
     </motion.section>
   );
 }
