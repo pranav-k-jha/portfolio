@@ -36,7 +36,7 @@ export default function About() {
         I am always looking to learn new technologies. I am currently learning
         about{" "}
         <span className="font-medium">
-          Docker, Monorepo, CI/CD and WebSockets
+          Advanced backend stack such as Docker, Monorepo, CI/CD and WebSockets
         </span>
         . I am currently
         looking for a <span className="font-medium">full-time position</span> as
