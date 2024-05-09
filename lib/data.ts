@@ -75,11 +75,11 @@ export const projectsData = [
     title: "REST Countries API",
     description:
       "This project is a solution to Frontend Mentor's advanced challenge for the REST Countries API, featuring search and filter functionalities, as well as a Color Theme Switcher and Dark Mode.",
-    tags: ["JavaScript", "CSS", "HTML"],
+    tags: ["React", "JavaScript", "CSS", "Parcel"],
     projectTags: ["Frontend", "Fullstack", "All"],
     imageUrl: countryApiImg,
-    gitRepo: "https://github.com/pranav-k-jha/countries-api",
-    projectLink: "https://countries-api-js.vercel.app/",
+    gitRepo: "https://github.com/pranav-k-jha/countries-api-react",
+    projectLink: "https://countries-api-react-anct.vercel.app/",
   },
   {
     title: "Gym Landing Page",
