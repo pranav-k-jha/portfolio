@@ -56,7 +56,7 @@ export const experiencesData = [
     description:
       "Served as a Graduate Research Assistant in the Department of Electrical and Computer Engineering. Contributed to the Development of a platform for Machine Learning Operations using open-source frameworks, under the guidance of Dr. Yan Liu",
     icon: React.createElement(CgWorkAlt),
-    date: "2018-2020",
+    date: "2018-2021",
   },
 ] as const;
 
