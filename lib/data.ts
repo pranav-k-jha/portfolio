@@ -35,15 +35,15 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Front-End Developer",
+    title: "Full-Stack Developer",
     location: "Fujitsu | Montreal, QC",
     description:
-      "I'm now a frontend developer, currently working with Fujitsu. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities as my contract with Fujitsu Inc. will end in May 2024",
+      "I'm now a full-stack developer, currently working with Fujitsu. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB, PostGreSQL. I'm open to full-time opportunities as my contract with Fujitsu Inc. will end in May 2024",
     icon: React.createElement(FaReact),
     date: "2023 - present",
   },
   {
-    title: "Front-End Developer, Part-Time",
+    title: "Front-End Developer",
     location: "D3 Innovation Hub | Montreal, QC",
     description:
       "I worked as a freelance front-end developer for D3 Innovation Hub, a startup incubator affiliated with my university, during my study at Conocrdia University.",
@@ -51,10 +51,10 @@ export const experiencesData = [
     date: "2021 - 2023",
   },
   {
-    title: "Wordpress Developer, Remote",
-    location: "MKJHA Consulting | Severn, MD",
+    title: "Graduate Research Assistant",
+    location: "Concordia University | Montreal, QC",
     description:
-      "I designed and developed the MKJHA Consulting website using WordPress CMS. I also managed and maintained the website’s content, ensuring it was organized and up-to-date.",
+      "Served as a Graduate Research Assistant in the Department of Electrical and Computer Engineering. Contributed to the Development of a platform for Machine Learning Operations using open-source frameworks, under the guidance of Dr. Yan Liu",
     icon: React.createElement(CgWorkAlt),
     date: "2018-2020",
   },
